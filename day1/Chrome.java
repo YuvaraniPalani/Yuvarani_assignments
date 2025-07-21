@@ -1,20 +1,19 @@
-package Week1.day1;
+package Week3.day1;
 
-public class Chrome {
-
+public class Chrome extends Browser {
+//child class of browser for inheritance
 	public static void main(String[] args) {
-	
-		float version =91.0f;
-		String developer ="Google" ;
-		boolean isBeta = false ;
-		int releaseYear = 2008;
-		char shortcutKey ='C';
-		
-	System.out.println("version: "+ version );
-	System.out.println("developer: "+ developer);
-	System.out.println("isBeta: "+ isBeta);
-	System.out.println("releaseYear: "+ releaseYear);
-	System.out.println("shortcutKey: "+ shortcutKey);
+		Chrome Chromemethods= new Chrome();
+        Chromemethods.openURL();
+        Chromemethods.navigateBack();
+        Chromemethods.closeBrowser();			
+        Chrome.openIncognito();
+		Chrome.clearCache();
 	}
-
+public static void openIncognito() {
+	System.out.println("Open Incognito in Chrome ");
+}
+public static void clearCache() {
+	System.out.println("Clear cathe in chrome");
+}
 }
